@@ -1,0 +1,16 @@
+%h1 outline show page
+.show-outline-container
+  %p
+    = @outline.title
+  %p
+    = @outline.description
+  %p
+    = @outline.tone
+  %p
+    = @outline.mood
+  %p
+    = @outline.aesthetic
+  %p
+    = @outline.beats
+%br
+= link_to 'Back', outlines_path

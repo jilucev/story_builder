@@ -1,26 +1,28 @@
 .form-container
- = form_for @outline do |f|
-  %p.form-label
-    = f.label :title
-  %p.form-input
-    = f.text_field :title
-  %p.form-label
-    = f.label :description
-  %p.form-input
-    = f.text_field :description
-  %p.form-label
-    = f.label :tone
-  %p.form-input
-    = f.text_field :tone
-  %p.form-label
-    = f.label :mood
-  %p.form-input
-    = f.text_field :mood
-  %p.form-label
-    = f.label :aesthetic
-  %p.form-input
-    = f.text_field :aesthetic
-  %p.form-label
-    = f.label :beats
-  %p.form-input
-    = f.text_field :beats
+  = form_for @outline do |f|
+    %p.form-label
+      = f.label :title
+    %p.form-input
+      = f.text_field :title
+    %p.form-label
+      = f.label :description
+    %p.form-input
+      = f.text_field :description
+    %p.form-label
+      = f.label :tone
+    %p.form-input
+      = f.text_field :tone
+    %p.form-label
+      = f.label :mood
+    %p.form-input
+      = f.text_field :mood
+    %p.form-label
+      = f.label :aesthetic
+    %p.form-input
+      = f.text_field :aesthetic
+    %p.form-label
+      = f.label :beats
+    %p.form-input
+      = f.text_field :beats
+    %br
+      = f.submit

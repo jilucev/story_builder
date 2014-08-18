@@ -1,2 +1,22 @@
 %h1 this is the outlines index
-= render 'outlines_form'
+= link_to "new outline", new_outline_path
+
+%table
+
+  %tr
+    %th Title
+
+    - @outlines.each do |outline|
+      %tr
+        %td= outline.title
+      
+  %tr
+    %th Description
+
+    - @outlines.each do |outline|
+      %tr
+        %td= outline.description
+        %td= link_to 'Show', outline_path(outline)
+        %td= link_to 'Edit', edit_outline_path(outline)
+        %td= link_to 'Destroy', outline_path(outline),
+                    method: :delete, data: {confirm: 'Are you sure you want to delete this outline?'}
